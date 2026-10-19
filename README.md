@@ -1,8 +1,8 @@
-# TapOnline × Queen City Grappling Club
+# TapOnline — product walkthrough (prepared for Queen City Grappling Club)
 
-A personalized, static product walkthrough page prepared by Quentin Wu for Queen City Grappling Club (Springboro & Maineville, OH).
+Static site, no build step. Published with GitHub Pages.
 
-- Plain HTML/CSS/JS, no build step. Open `index.html` or serve the folder.
-- Mock screens are HTML/CSS recreations with sample data.
-- QCGC facts are quoted from public sources (queencitygrappling.com and the public Instagram profile header), viewed Oct 19, 2026.
-- Not affiliated with or endorsed by Queen City Grappling Club.
+- `index.html`: a walkthrough of the TapOnline product, screen by screen. It covers the member app (M01–M23), the staff app (S01–S07) and the owner console (O01–O20), each with an interactive mock.
+- `compare.html`: the current default look next to a custom QCGC monochrome version made with TapOnline's appearance settings, shown with before/after sliders.
+
+All mocks are simplified HTML/CSS recreations that use sample data. No product source code, credentials or internal data are included.
