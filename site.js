@@ -100,8 +100,7 @@
     ["membership", "Membership", [], true], ["pricing", "Membership pricing", ["membership"], true], ["credits", "Class credits", ["membership", "booking"], true],
     ["payments", "Payments", [], false], ["store", "Store", [], false], ["waiver", "Waiver", [], true],
     ["belt", "Belt", [], true], ["training", "Training time", [], true], ["progression", "Belt progression", ["belt", "training"], true],
-    ["directory", "Member directory", [], true], ["line", "LINE Official Account", [], true], ["messages", "Messages", ["line"], false],
-    ["ai", "AI assistant", ["messages"], false], ["theme", "Custom theme", [], false],
+    ["directory", "Member directory", [], true], ["theme", "Custom theme", [], false],
   ];
   const label = Object.fromEntries(MODS.map((m) => [m[0], m[1]]));
   const state = {};
@@ -126,7 +125,6 @@
       paint();
     });
     $("#mods-reset").addEventListener("click", () => { reset(); log.textContent = "Back to the product defaults for a new gym."; });
-    $("#mods-qcgc") && $("#mods-qcgc").addEventListener("click", () => { MODS.forEach(([id]) => (state[id] = true)); paint(); log.textContent = "Suggested for QCGC: everything on, including Payments, Store (pro shop), Messages, AI assistant and Custom theme."; });
     reset();
   }
 
